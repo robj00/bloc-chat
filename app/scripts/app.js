@@ -1,3 +1,4 @@
+(function() {
 function config($stateProvider, $locationProvider) {
         $locationProvider
             .html5Mode({
@@ -6,9 +7,9 @@ function config($stateProvider, $locationProvider) {
             }); 
          
         $stateProvider
-            .state('main', {
+            .state('roomc', {
                 url: '/',
-//                controller: 'LandingCtrl as landing',
+                controller: 'RoomCtrl as roomc',
                 templateUrl: '/templates/home.html'
             });  
      }
